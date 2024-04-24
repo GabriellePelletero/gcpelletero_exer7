@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="http://localhost:3000/style.css"
+    />
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="">FAVORITE FOOD</a>
+      <a href="">FAVORITE SONGS</a>
+      <a href="">FAVORITE QUOTES</a>
+    </div>
+
+    <form id="foodform">
+      <label for="foodname">Food Name:</label>
+      <input type="text" id="foodname" name="foodname" required /><br /><br />
+
+      <label for="description">Description:</label>
+      <input
+        type="text"
+        id="description"
+        name="description"
+        required
+      /><br /><br />
+
+      <label for="imageurl">Image URL:</label>
+      <input type="text" id="imageurl" name="imageurl" required /><br /><br />
+
+      <label for="rank">Rank:</label>
+      <input type="number" id="rank" name="rank" required /><br /><br />
+
+      <input type="submit" value="Submit" />
+    </form>
+
+    <div class="content" id="foodcards">
+      <!-- food cards will be here -->
+    </div>
+
+    <script type="text/javascript" src="http://localhost:3000/form.js"></script>
+  </body>
+</html>

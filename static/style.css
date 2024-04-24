@@ -1,0 +1,59 @@
+body {
+    font-family: Arial;
+}
+
+/*navigation bar*/
+.navbar {
+    width: 200px;
+    height: 100%;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+}
+
+.navbar a {
+    display: block;
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/*content area*/
+.content {
+    margin-left: 240px; 
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*food boxes*/
+.foodbox {
+    width: calc(25% - 20px); /*fit 4 boxes in a row*/
+    height: auto;
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box; /*padding is included in the width*/
+    display: flex;
+    flex-direction: column;
+}
+
+.foodimage {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    align-self: center;
+}
+
+/*form*/
+#foodform {
+    margin-left: 240px; 
+    padding: 20px;
+}
